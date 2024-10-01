@@ -1,0 +1,34 @@
+calculator {
+    /* Add styling for the calculator container */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    width:calc(100%-80px)
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  button {
+    /* Add styling for the calculator buttons */
+    padding: 10px;
+    font-size: 18px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d0d0d0;
+  }
+  
+  #display {
+    /* Add styling for the display input field */
+    padding: 10px;
+    font-size: 30%;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    background-color: #ffffff;
+  }

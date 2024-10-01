@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #calculator {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+        }
+
+        #screen {
+            width: 100%;
+            padding: 10px;
+            text-align: right;
+            font-size: 1.5em;
+            border: none;
+            outline: none;
+        }
+
+        #buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 1.2em;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        button.operator {
+            background-color: #fca311;
+            color: #fff;
+        }
+
+        button.double {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="calculator">
+        <input type="text" id="screen" readonly>
+
+        <div id="buttons">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">/</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">*</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">-</button>
+
+            <button>0</button>
+            <button>.</button>
+            <button class="operator double">+</button>
+            <button class="operator double" id="toggle">Sci</button>
+
+            <button class="operator double" id="clear">C</button>
+            <button class="operator double" id="equals">=</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript logic for calculator functionality goes here
+    </script>
+
+</body>
+</html>
